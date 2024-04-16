@@ -1,5 +1,3 @@
-# Kubesort Script Documentation
-
 ## Description
 The Kubesort script is a bash script designed to list specific resource types using the Kubernetes `kubectl` command. It provides options to sort and filter the output based on various fields.
 
