@@ -10,20 +10,20 @@ The Kubesort script is a bash script designed to list specific resource types us
 ```bash
 kubesort kubectl get OPTION1 OPTION2 OPTION3 [OPTION4]
 Available Options
-OPTION1: Specifies the resource type to list. Available options are:
 
+OPTION1: Specifies the resource type to list. Available options are:
 pod, pods, po (Pods)
 deployments, deployment, deploy (Deployments)
 svc, service, services (Services)
-OPTION2: Specifies the fields to display for the selected resource type. Available fields depend on the resource type selected. Common fields include:
 
+OPTION2: Specifies the fields to display for the selected resource type. Available fields depend on the resource type selected. Common fields include:
 For Pods: name, status, restarts, age, ip, node
 For Deployments: name, uptodate, available, age, containers, images
 For Services: name, type, clusterIP, port, age
+
 OPTION3: Specifies the namespace to list resources from. Use all to list resources from all namespaces.
 
 OPTION4 (optional):
-
 --sort-by=[field]: Sorts the output by the specified field.
 --filter=[field=value]: Filters the output based on the specified field and value.
 # List all Pods sorted by age
